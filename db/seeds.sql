@@ -1,3 +1,3 @@
 USE daBurger_db;
 
-INSERT INTO burgers (name) VALUES ('Whopper'), ('Big Mac'), ('Quarter Pounder')  
+INSERT INTO burgers (burger_name) VALUES ('Whopper'), ('Big Mac'), ('Quarter Pounder')  

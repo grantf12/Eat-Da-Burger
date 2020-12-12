@@ -2,9 +2,7 @@
 var connection = require("./connection.js");
 
 // Helper function for SQL syntax.
-// Let's say we want to pass 3 values into the mySQL query.
-// In order to write the query, we need 3 question marks.
-// The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
+// Helps by converting the array of question marks to a string that can be run though the query
 // ["?", "?", "?"].toString() => "?,?,?";
 function printQuestionMarks(num) {
   var arr = [];
@@ -25,12 +23,12 @@ function objToSql(ob) {
     var value = ob[key];
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
-      // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // if string with spaces, add quotations
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+
+      // turns the object into an array with a key and value
       arr.push(key + "=" + value);
     }
   }
@@ -70,7 +68,7 @@ var orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // function that will take in the table, the col values of the table and a condition, run it through the query and return a cb
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
@@ -88,6 +86,7 @@ var orm = {
       cb(result);
     });
   },
+  // a delete funciton that will grab the table and condition and return a cb
   delete: function(table, condition, cb) {
     var queryString = "DELETE FROM " + table + " WHERE " + condition;
 
