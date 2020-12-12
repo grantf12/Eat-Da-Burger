@@ -17,6 +17,11 @@ var burger = {
       cb(res);
     });
   },
+  
+  // "Error: condition not defined"
+
+  // =======================
+
   // deleteOne: function(condition, cb) {
   //   orm.selectAll("burgers", condition, function(res){
   //     cb(res)

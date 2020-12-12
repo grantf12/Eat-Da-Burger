@@ -1,6 +1,6 @@
 // make sure that everything loads first
 $(function() {
-  
+  // on submitting the create-form, a newBurger is made using the value in the input area
   $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
@@ -22,10 +22,10 @@ $(function() {
       }
     );
   });
-  
+  // Clicking the "devour it" button
   $(".devourit").on("click", function(event) {
     var id = $(this).data("id");
-// Changes the devoured avlue to true (1)
+// Changes the devoured value to true (1)
     var devouredState = {
       devoured: 1
     };
@@ -42,6 +42,10 @@ $(function() {
       }
     );
   });
+
+  // Delete button ======== Needs Work
+
+  // ==================================================
   
 // $(".garbageburger").on("click", function(event){
 //   event.preventDefault();
