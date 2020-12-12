@@ -5,6 +5,7 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
+      // Link to handlebars form as "newburger"
       burger_name: $("#newburger").val().trim(),
       devoured: 0
     };
@@ -41,6 +42,7 @@ $(function() {
       }
     );
   });
+  
 $(".garbageburger").on("click", function(event){
   event.preventDefault();
 
