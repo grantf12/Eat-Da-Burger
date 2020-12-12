@@ -87,18 +87,18 @@ var orm = {
     });
   },
   // a delete funciton that will grab the table and condition and return a cb
-  delete: function(table, condition, cb) {
-    var queryString = "DELETE FROM " + table + " WHERE " + condition;
+  // delete: function(table, condition, cb) {
+  //   var queryString = "DELETE FROM " + table + " WHERE " + condition;
 
-    console.log(queryString);
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
+  //   console.log(queryString);
+  //   connection.query(queryString, function(err, result) {
+  //     if (err) {
+  //       throw err;
+  //     }
 
-      cb(result);
-    });
-  }
+  //     cb(result);
+  //   });
+  // }
 };
 
 // Export the orm object for the model (burger.js).

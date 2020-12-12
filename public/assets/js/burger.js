@@ -43,17 +43,17 @@ $(function() {
     );
   });
   
-$(".garbageburger").on("click", function(event){
-  event.preventDefault();
+// $(".garbageburger").on("click", function(event){
+//   event.preventDefault();
 
-  var id = $(this).data("id");
+//   var id = $(this).data("id");
 
-  // send the delete request
-  $.ajax({
-    type: "DELETE",
-    url: "/api/burgers/" + id
-    // Deletes the burger based on ID then reloads the page to refresh list
-  }).then(location.reload());
-})
+//   // send the delete request
+//   $.ajax({
+//     type: "DELETE",
+//     url: "/api/burgers/" + id
+//     // Deletes the burger based on ID then reloads the page to refresh list
+//   }).then(location.reload());
+// })
 
 });
