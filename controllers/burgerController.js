@@ -39,7 +39,8 @@ router.get("/", function (req, res) {
       }
     );
   });
-
+//  getting an error saying condtion is not defined
+// ==========================================
   // router.delete(condition, function (req, res) {
   //   var condition = "id = " + req.params.id;
   //   console.log("condition", condition);

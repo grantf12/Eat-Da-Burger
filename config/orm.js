@@ -91,7 +91,7 @@ var orm = {
   },
   
   // a delete funciton that will grab the table and condition and return a cb
-
+  // Getting an error that condition is not defined
   // ==========================
 
   // delete: function(table, condition, cb) {
