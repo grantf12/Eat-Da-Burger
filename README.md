@@ -19,7 +19,7 @@
   ## Usage:
     By pulling up the website using the deployed heroku app, the user can input the type of burger they want and see it get pushed to the "Burgers Ready" list with an option to "Devour It!", once devoured, the burger will change to the "Devoured Burgers" list.
 
-![Picture1](https://user-images.githubusercontent.com/70180576/102024059-8fdfe500-3d5d-11eb-82ce-74c14485d16c.jpg)
+![Picture1](https://user-images.githubusercontent.com/70180576/102025827-7b551a00-3d68-11eb-983d-a765f6f2a10c.jpg)
 
 
   ## License:
